@@ -15,6 +15,9 @@
 		843133B720A9D65C00101EDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843133B520A9D65C00101EDB /* LaunchScreen.storyboard */; };
 		843133C220A9D65D00101EDB /* DishwasherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843133C120A9D65D00101EDB /* DishwasherTests.swift */; };
 		843133CD20A9D65D00101EDB /* DishwasherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843133CC20A9D65D00101EDB /* DishwasherUITests.swift */; };
+		843133DB20A9DF9C00101EDB /* Dishwasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843133DA20A9DF9C00101EDB /* Dishwasher.swift */; };
+		843133DD20A9E0C000101EDB /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843133DC20A9E0C000101EDB /* ProductService.swift */; };
+		843133DF20A9EE7200101EDB /* DishwasherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843133DE20A9EE7200101EDB /* DishwasherCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		843133C820A9D65D00101EDB /* DishwasherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DishwasherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		843133CC20A9D65D00101EDB /* DishwasherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishwasherUITests.swift; sourceTree = "<group>"; };
 		843133CE20A9D65D00101EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843133DA20A9DF9C00101EDB /* Dishwasher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dishwasher.swift; sourceTree = "<group>"; };
+		843133DC20A9E0C000101EDB /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		843133DE20A9EE7200101EDB /* DishwasherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishwasherCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				843133B520A9D65C00101EDB /* LaunchScreen.storyboard */,
 				843133B820A9D65C00101EDB /* Info.plist */,
 				843133B020A9D65B00101EDB /* Dishwasher.xcdatamodeld */,
+				843133DA20A9DF9C00101EDB /* Dishwasher.swift */,
+				843133DC20A9E0C000101EDB /* ProductService.swift */,
+				843133DE20A9EE7200101EDB /* DishwasherCollectionViewCell.swift */,
 			);
 			path = Dishwasher;
 			sourceTree = "<group>";
@@ -260,8 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				843133AC20A9D65B00101EDB /* ViewController.swift in Sources */,
+				843133DB20A9DF9C00101EDB /* Dishwasher.swift in Sources */,
+				843133DF20A9EE7200101EDB /* DishwasherCollectionViewCell.swift in Sources */,
 				843133B220A9D65B00101EDB /* Dishwasher.xcdatamodeld in Sources */,
 				843133AA20A9D65B00101EDB /* AppDelegate.swift in Sources */,
+				843133DD20A9E0C000101EDB /* ProductService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
