@@ -11,13 +11,13 @@
 		843133AC20A9D65B00101EDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843133AB20A9D65B00101EDB /* ViewController.swift */; };
 		843133B220A9D65B00101EDB /* Dishwasher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 843133B020A9D65B00101EDB /* Dishwasher.xcdatamodeld */; };
 		843133B420A9D65C00101EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843133B320A9D65C00101EDB /* Assets.xcassets */; };
-		843133B720A9D65C00101EDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843133B520A9D65C00101EDB /* LaunchScreen.storyboard */; };
 		843133C220A9D65D00101EDB /* DishwasherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843133C120A9D65D00101EDB /* DishwasherTests.swift */; };
 		843133CD20A9D65D00101EDB /* DishwasherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843133CC20A9D65D00101EDB /* DishwasherUITests.swift */; };
 		843133DB20A9DF9C00101EDB /* Dishwasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843133DA20A9DF9C00101EDB /* Dishwasher.swift */; };
 		843133DD20A9E0C000101EDB /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843133DC20A9E0C000101EDB /* ProductService.swift */; };
 		843133DF20A9EE7200101EDB /* DishwasherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843133DE20A9EE7200101EDB /* DishwasherCollectionViewCell.swift */; };
 		843133E120AA762D00101EDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843133E020AA762D00101EDB /* Main.storyboard */; };
+		843133E320AA8E0000101EDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843133E220AA8E0000101EDB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 		843133AB20A9D65B00101EDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		843133B120A9D65B00101EDB /* Dishwasher.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dishwasher.xcdatamodel; sourceTree = "<group>"; };
 		843133B320A9D65C00101EDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		843133B620A9D65C00101EDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		843133B820A9D65C00101EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843133BD20A9D65D00101EDB /* DishwasherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DishwasherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		843133C120A9D65D00101EDB /* DishwasherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishwasherTests.swift; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		843133DC20A9E0C000101EDB /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		843133DE20A9EE7200101EDB /* DishwasherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishwasherCollectionViewCell.swift; sourceTree = "<group>"; };
 		843133E020AA762D00101EDB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		843133E220AA8E0000101EDB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +105,10 @@
 		843133A820A9D65B00101EDB /* Dishwasher */ = {
 			isa = PBXGroup;
 			children = (
+				843133E220AA8E0000101EDB /* LaunchScreen.storyboard */,
 				843133A920A9D65B00101EDB /* AppDelegate.swift */,
 				843133AB20A9D65B00101EDB /* ViewController.swift */,
 				843133B320A9D65C00101EDB /* Assets.xcassets */,
-				843133B520A9D65C00101EDB /* LaunchScreen.storyboard */,
 				843133E020AA762D00101EDB /* Main.storyboard */,
 				843133B820A9D65C00101EDB /* Info.plist */,
 				843133B020A9D65B00101EDB /* Dishwasher.xcdatamodeld */,
@@ -241,8 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843133E320AA8E0000101EDB /* LaunchScreen.storyboard in Resources */,
 				843133E120AA762D00101EDB /* Main.storyboard in Resources */,
-				843133B720A9D65C00101EDB /* LaunchScreen.storyboard in Resources */,
 				843133B420A9D65C00101EDB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,17 +307,6 @@
 			targetProxy = 843133C920A9D65D00101EDB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		843133B520A9D65C00101EDB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				843133B620A9D65C00101EDB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		843133CF20A9D65D00101EDB /* Debug */ = {
