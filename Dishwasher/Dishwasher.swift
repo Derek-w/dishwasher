@@ -8,16 +8,17 @@
 
 import Foundation
 
-struct Dishwaser: Decodable {
+struct Dishwasher: Decodable {
     
     let title: String
-    let tilte: [String: String]
+    let price: [String: String]
+    let image: String
     
 }
 
 struct ApiResponse: Decodable {
     
-    let products: [Dishwaser]
+    let products: [Dishwasher]
     
 }
 

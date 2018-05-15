@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias ProductHandler = ([Dishwaser]) -> Void
+typealias ProductHandler = ([Dishwasher]) -> Void
 
 struct ProductAPI {
     
@@ -46,8 +46,7 @@ class ProductService {
             do {
                 let response = try JSONDecoder().decode(ApiResponse.self, from: jsonData)
                 completion(response.products)
-                
-            } catch let e as NSError {
+            }catch let e as NSError{
                 print(e.localizedDescription)
                 completion([])
             }

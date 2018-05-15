@@ -11,18 +11,21 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var dishwasherCollectionView: UICollectionView!
-    var products = [Dishwaser]()
+    var products: [Dishwasher] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ProductService.getProducts(){[unowned self] dishwashers in self.products = dishwashers
+        ProductService.getProducts(){ [unowned self] dishwashers in
+            self.products = dishwashers
             DispatchQueue.main.async {
                 self.dishwasherCollectionView.reloadData()
             }
-        // Do any additional setup after loading the view, typically from a nib.
         }
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -41,8 +44,12 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: view.frame.size.width/2, height: 400.0)
         }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.0
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        <#code#>
+        return 0.0
     }
 }
 
@@ -54,10 +61,18 @@ extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishwasherCollectionViewCell.identifier, for: indexPath)
-        guard let dishwasherCell = cell as? DishwasherCollectionViewCell else { return }
+        let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: DishwasherCollectionViewCell.identifier,
+            for: indexPath)
+        
+        guard let dishwasherCell = cell as? DishwasherCollectionViewCell else {
+            return cell
+        }
+        
         let dishwasher = products[indexPath.row]
         dishwasherCell.configure(with: dishwasher)
+        
+        return dishwasherCell
     }
 }
 
